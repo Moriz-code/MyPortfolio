@@ -1,0 +1,25 @@
+.main-container {
+    // max-width: $normal-breakpoint;
+    margin: 0 auto;
+
+    @include mobile {
+        max-width: $mobile-breakpoint;
+    }
+    @include normal {
+        max-width: $narrow-breakpoint;
+    }
+    @include wide {
+        max-width: $normal-breakpoint;
+    }
+}
+
+// // Breakpoints
+// $mobile-breakpoint: 460px;
+// $narrow-breakpoint: 720px;
+// $normal-breakpoint: 960px;
+
+// .cards-container {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+//     grid-gap: 10px;
+// }

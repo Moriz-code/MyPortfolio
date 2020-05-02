@@ -1,0 +1,81 @@
+[
+    {
+        "id": "1",
+        "title": "ShowRoom",
+        "description": "Cool Marketplace For Fashion Designer",
+        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis autem animi dolor vero minima aperiam suscipit a? Voluptas vel eveniet porro dolore rem, iure tempora recusandae consequuntur maiores laudantium magnam.",
+        "imgs": [
+            "/Images/projects/showroom/showroom.png",
+            "/Images/projects/showroom/devices.png"
+        ],
+        "technical": [
+            "HTML5",
+            "RACTJS",
+            "REDUX",
+            "MONGODB",
+            "WEB SOCKET",
+            "SASS",
+            "UI/UX"
+        ],
+        "github": "https://github.com/Moriz-code/Showroom",
+        "website": "http://showroomweb.herokuapp.com/"
+    },
+    {
+        "id": "2",
+        "title": "BRIOT-ON",
+        "description": "Interactive Game & Weekly Diary",
+        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis autem animi dolor vero minima aperiam suscipit a? Voluptas vel eveniet porro dolore rem, iure tempora recusandae consequuntur maiores laudantium magnam.",
+        "imgs": [
+            "/Images/projects/schneider/schnider.png",
+            "/Images/projects/schneider/devices.png"
+        ],
+        "technical": [
+            "HTML5",
+            "CSS3",
+            "VANILLAJS",
+            "UI/UX",
+            "GRAPHIC DESIGN"
+        ],
+        "website": "http://showroomweb.herokuapp.com/"
+    },
+    {
+        "id": "3",
+        "title": "KEEP-IT",
+        "description": "Cool Marketplace for fashion designer",
+        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis autem animi dolor vero minima aperiam suscipit a? Voluptas vel eveniet porro dolore rem, iure tempora recusandae consequuntur maiores laudantium magnam.",
+        "imgs": [
+            "/Images/projects/keep/keep.png",
+            "/Images/projects/keep/devices.png"
+        ],
+        "technical": [
+            "HTML5",
+            "RACTJS",
+            "REDUX",
+            "MONGODB",
+            "WEB SOCKET",
+            "SASS",
+            "UI/UX"
+        ],
+        "github": "https://github.com/Moriz-code/Showroom",
+        "website": "http://showroomweb.herokuapp.com/"
+    },
+    {
+        "id": "4",
+        "title": "MEME GENERATOR",
+        "description": "Create your own creative MEME",
+        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis autem animi dolor vero minima aperiam suscipit a? Voluptas vel eveniet porro dolore rem, iure tempora recusandae consequuntur maiores laudantium magnam.",
+        "imgs": [
+            "/Images/projects/memeGenerator/memeGenerator.png",
+            "/Images/projects/memeGenerator/memeGenerator.png"
+        ],
+        "technical": [
+            "CANVAS",
+            "HTML5",
+            "CSS3",
+            "MVC",
+            "VANILLAJS"
+        ],
+        "github": "https://github.com/Moriz-code/Showroom",
+        "website": "http://showroomweb.herokuapp.com/"
+    }
+]

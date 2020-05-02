@@ -1,0 +1,27 @@
+// Setup
+@import "setup/variables.scss";
+@import "setup/functions.scss";
+@import "setup/mixins.scss";
+
+// Basics
+@import "basics/helpers.scss";
+@import "basics/layout.scss";
+@import "basics/base.scss";
+@import "basics/links.scss";
+@import "basics/buttons.scss";
+@import "basics/typography.scss";
+@import "basics/colors.scss";
+@import "basics/animation.scss";
+
+//pages
+@import "pages/projectDetails.scss";
+
+//cmps
+@import "cmps/about.scss";
+@import "cmps/contact.scss";
+@import "cmps/home.scss";
+@import "cmps/projects.scss";
+@import "cmps/nav.scss";
+@import "cmps/timelime.scss";
+
+// @import "~bootstrap/scss/bootstrap";
