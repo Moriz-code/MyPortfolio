@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Me from '../Images/home/me_home.JPG';
 import Resume from '../files/Mor_Zeevi_Resume.docx';
 
-const NavBar = () => {
+
+// import { useHistory } from "react-router-dom";
+
+const Home = () => {
     return (<div id="home" className="home bounce-in-top">
         <section className="content">
             <div className="intro-txt">
@@ -22,4 +25,4 @@ const NavBar = () => {
     </div>)
 
 }
-export default NavBar
+export default Home

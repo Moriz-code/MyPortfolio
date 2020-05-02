@@ -34,34 +34,30 @@ class Main extends Component {
 
             <NavBar />
 
-            <LazyLoad height='120vh'>
-                <Element name="home">
+            <Element name="home">
+                <LazyLoad height='100vh'>
                     <Home />
-                </Element>
-            </LazyLoad>
+                </LazyLoad>
+            </Element>
 
-            <LazyLoad height='100vh' offset={-300}>
-                <Element name="about" >
+            <Element name="about" offset={-300}>
+                <LazyLoad height='120vh'>
                     <About />
-                </Element>
-            </LazyLoad>
+                </LazyLoad>
+            </Element>
 
-            <LazyLoad height='100vh' offset={-300}>
-                <Element name="projects">
-
+            <Element name="projects">
+                <LazyLoad height='100vh' offset={-300}>
                     <Projects projects={this.state.projects} />
+                </LazyLoad>
+            </Element>
 
-                </Element>
-            </LazyLoad>
 
-
-            <LazyLoad height='100vh'>
-                <Element name="contact">
-                    <div>
-                        <Contact />
-                    </div>
-                </Element>
-            </LazyLoad>
+            <Element name="contact">
+                <LazyLoad height='100vh'>
+                    <Contact />
+                </LazyLoad>
+            </Element>
 
         </>)
     }

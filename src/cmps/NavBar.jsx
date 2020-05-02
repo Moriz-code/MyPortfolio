@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+// import { NavLink, Link } from 'react-router-dom';
 
-const NavBar = () => {
+const NavBar = (props) => {
 
     const [scroll, setScroll] = useState(0)
 
@@ -16,12 +17,9 @@ const NavBar = () => {
         })
     })
 
-    useEffect(() => {
-        handleSetActive('home')
-    }, [])
-
 
     const handleSetActive = (to) => {
+        // history.push('/template');
         console.log(to);
     }
 
@@ -30,16 +28,16 @@ const NavBar = () => {
             <div className="content">
                 <div className="logo"><a href="#home">Mor's Protfolio<span className="red-dot">.</span></a></div>
                 <ul>
-                    <Link activeClass="active" to="home" spy={true} smooth={true} duration={300} onSetActive={handleSetActive}>
+                    <Link to={'/'} activeClass="active" to="home" spy={true} smooth={true} duration={300} onSetActive={handleSetActive}>
                         Home
                       </Link>
-                    <Link activeClass="active" to="about" spy={true} smooth={true} duration={300} onSetActive={handleSetActive}>
+                    <Link to={'/about'} activeClass="active" to="about" spy={true} smooth={true} duration={300} onSetActive={handleSetActive}>
                         About
                       </Link>
-                    <Link activeClass="active" to="projects" spy={true} smooth={true} duration={300} onSetActive={handleSetActive}>
+                    <Link to={'/projects'} activeClass="active" to="projects" spy={true} smooth={true} duration={300} onSetActive={handleSetActive}>
                         Projects
                       </Link>
-                    <Link activeClass="active" to="contact" spy={true} smooth={true} duration={300} onSetActive={handleSetActive}>
+                    <Link to={'/contact'} activeClass="active" to="contact" spy={true} smooth={true} duration={300} onSetActive={handleSetActive}>
                         Contact
                       </Link>
                 </ul>

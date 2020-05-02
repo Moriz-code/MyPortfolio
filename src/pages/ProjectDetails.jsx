@@ -1,44 +1,24 @@
 import React, { useEffect, useState } from 'react';
-// import { Link } from 'react-router-dom';
-import Carousel from 'react-bootstrap/Carousel';
 import NavBar from '../cmps/NavBar';
 
 
 import projectService from '../services/project.service';
 
 
-//images
-
-// import showroom1 from '../Images/projects/showroom.PNG';
-// import showroom2 from '../Images/projects/showroom1.PNG';
-// import showroom3 from '../Images/projects/showroom/showroom_devices.png';
-
-
-
 const ProjectDetails = (props) => {
 
     const [project, setProject] = useState('');
+
 
     useEffect(async () => {
         const currentProject = await projectService.getById(props.match.params.id);
         setProject(currentProject);
     }, [])
 
-    useEffect(() => {
-        // this.props.history.push(`/`);
-        console.log(project);
-
-    })
-    useEffect(() => {
-        console.log('project', project);
-
-    }, [project])
-
 
 
     return (<>
         <NavBar></NavBar>
-
         {project ?
             <div className="project-container">
                 <div className="head">

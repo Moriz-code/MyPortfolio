@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Form from 'react-bootstrap/Form';
 
 import location from '../Images/contact/location.png';
@@ -7,7 +7,17 @@ import phone from '../Images/contact/phone.png';
 import facebook from '../Images/contact/facebook.png';
 import linkedin from '../Images/contact/linkedin.png';
 
+import { useHistory } from "react-router-dom";
+
 const Contact = () => {
+
+    const history = useHistory();
+
+
+    useEffect(() => {
+        history.push("/contact");
+    }, [])
+
 
     return (<section id="contact" className="contact main-container bounce-in-top">
         <h2 className="main-title">Let's Talk</h2>

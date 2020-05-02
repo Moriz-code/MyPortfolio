@@ -7,12 +7,12 @@ const ProjectPreview = (props) => {
     const { project } = props
 
     useEffect(() => {
-        console.log(props.project);
+        // console.log(props.project);
 
     }, [])
 
     return (<>
-        <Link to={`/projectdetails/${project.id}`}>
+        <Link to={`/${project.id}`}>
             <div className="project square-ratio">
                 <img src={project.imgs[0]} />
                 <div className="overlay">

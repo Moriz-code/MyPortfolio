@@ -1,13 +1,17 @@
 import React, { useEffect } from 'react';
 
 import ProjectList from './ProjectList';
+import { useHistory } from "react-router-dom";
 
 
 const Projects = (props) => {
 
 
+    const history = useHistory();
+
+
     useEffect(() => {
-        console.log('props', props);
+        history.push("/projects");
     }, [])
 
 

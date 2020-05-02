@@ -17,11 +17,11 @@ function App() {
     <Router history={history}>
       <div className="app">
         <Switch>
-          {/* <Route component={About} path="/about"></Route>
+          <Route component={Main} path="/"></Route>
+          <Route component={About} path="/about"></Route>
+          <Route component={Projects} path="/projects"></Route>
           <Route component={Contact} path="/contact"></Route>
-          <Route component={Projects} path="/projects"></Route> */}
-          <Route component={ProjectDetails} path="/projectdetails/:id"></Route>
-          <Route component={Main} path="/" exact></Route>
+          <Route component={ProjectDetails} path="/:id"></Route>
         </Switch>
       </div>
     </Router>

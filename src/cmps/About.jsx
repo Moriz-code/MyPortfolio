@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Timeline from './Timeline';
 
-import skills from '../Images/about/intelligence.png';
-import work from '../Images/about/work.png';
-import eduction from '../Images/about/eduction.png';
+// import skills from '../Images/about/intelligence.png';
+// import work from '../Images/about/work.png';
+// import eduction from '../Images/about/eduction.png';
 import hit from '../Images/about/hit.png';
 import ca from '../Images/about/codingacademy.png';
 
@@ -16,19 +16,20 @@ import reactLogo from '../Images/logos/react.png';
 import vueLogo from '../Images/logos/vue.png';
 import sassLogo from '../Images/logos/sass.png';
 import nodeLogo from '../Images/logos/nodejs.png';
-import esLogo from '../Images/logos/es6.png'
-
-// import { lazyload } from 'react-lazyload';
-
-// @lazyload({
-//     height: '100%',
-//     once: true,
-//     offset: 100
-// })
-
-
+import esLogo from '../Images/logos/es6.png';
+import { useHistory } from "react-router-dom";
 
 const About = () => {
+
+    const history = useHistory();
+
+
+    useEffect(() => {
+        history.push("/about");
+    }, [])
+
+
+
     return (
         <section id="about" className="about bounce-in-top">
             <div className="info-txt">
