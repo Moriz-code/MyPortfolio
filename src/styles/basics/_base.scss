@@ -6,6 +6,21 @@ html {
     font-family: Raleway, sans-serif;
     line-height: 1.6;
     scroll-behavior: smooth;
+
+    @include mobile {
+        font-size: 12px;
+    }
+
+    @include narrow {
+        font-size: 14px;
+    }
+    @include normal {
+        font-size: 16px;
+    }
+
+    // @include wide {
+    //     font-size: 18px;
+    // }
 }
 
 body {
@@ -76,6 +91,28 @@ button {
     font-size: 2.5rem;
     color: $grey-3;
     font-family: Playfair;
+    text-align: center;
+
+    @include normal {
+        text-align: left;
+    }
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: rem(100px);
+    justify-content: center;
+    background-image: url("../../Images/bg-ss-1.png");
+    width: 100%;
+    margin-top: 10vh;
+    padding-top: 20px;
+
+    a {
+        text-decoration: underline;
+    }
+    // background-position: center;
 }
 
 // section {

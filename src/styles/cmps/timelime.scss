@@ -3,6 +3,17 @@ $line-color: $grey-2;
 .timeline {
     display: grid;
     grid-template-columns: 10% 80% 10%;
+    margin-bottom: 80px;
+
+    // margin-bottom: 10px;
+
+    @include mobile {
+        padding: 0px 15px 0px;
+    }
+
+    // @include normal {
+    //     margin-bottom: 80px;
+    // }
 
     section {
         min-height: 50px;
@@ -24,8 +35,13 @@ $line-color: $grey-2;
                 color: $grey-3;
                 font-family: Raleway;
 
+                @include mobile {
+                    padding: 0px 5px 0px;
+                }
+
                 li {
                     color: $grey-3;
+                    // max-width: 70ch;
                 }
                 // list-style-position: inside;
             }
@@ -115,10 +131,9 @@ $line-color: $grey-2;
     justify-content: center;
     align-items: center;
 
-    // img {
-    //     max-height: 90px;
-    //     max-width: 100%;
-    // }
+    @include mobile {
+        margin-left: 0px;
+    }
 }
 
 .mamram {

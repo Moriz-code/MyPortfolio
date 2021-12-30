@@ -1,56 +1,166 @@
-.main-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 55px;
-    color: #212529;
-    font-size: rem(16px);
-    font-family: Raleway;
-    // background-color: white;
-    width: 100%;
-    z-index: 1;
-    // box-shadow: 0px 1px 5px #e6e6e6;
-
-    .logo {
-        // color: #bcbcbc;
-        font-size: rem(22px);
-        .red-dot {
-            color: $red;
-            font-size: 30px;
-        }
-
-        a {
-            color: #212529;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
+.logo {
+    font-size: rem(22px);
+    .red-dot {
+        color: $red;
+        font-size: 30px;
     }
 
-    .content {
-        display: flex;
-        width: 75%;
-        height: 100%;
-        justify-content: space-between;
-        align-items: center;
-        ul {
-            display: flex;
-            flex-basis: 40%;
-            justify-content: space-around;
-            flex-direction: row;
-            margin: 0;
-            align-items: center;
-            width: 50%;
+    a {
+        color: #212529;
+    }
 
-            .active {
-                color: $red;
-            }
+    a:hover {
+        text-decoration: none;
+    }
+}
 
-            a {
-                cursor: pointer;
-                color: $txt;
-            }
-        }
+.active {
+    @include narrow {
+        background-position: 20% 30%;
+        background-color: $grey-1;
+    }
+
+    @include mobile {
+        background-position: 17% 50%;
+        background-color: $grey-1;
+    }
+
+    @include normal {
+        background-position: 20% 36%;
+        background-color: transparent;
+    }
+
+    background-image: url("../../Images/blue_triangle.png");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    font-weight: 600;
+}
+
+.header {
+    background-color: #fff;
+    // box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    font-family: Raleway;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: #fafbfd;
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    background: $grey-4;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: $grey-4;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 340px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+@include wide {
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 20px 30px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
     }
 }

@@ -17,7 +17,7 @@ const Projects = (props) => {
 
     const { projects } = props
     return (
-        <section id="projects" className="projects bounce-in-top" >
+        <section id="projects" className="projects slide-in-bck-center" >
             <div className="main-container">
                 <div className="intro">
                     <h2 className="main-title">My Latest Projects</h2>

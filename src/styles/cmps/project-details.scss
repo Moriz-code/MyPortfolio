@@ -1,0 +1,136 @@
+.project-modal {
+    background-color: white;
+
+    background-image: url("../../Images/element_mountains_flip.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% -25%;
+    max-height: 90%;
+
+    overflow-y: scroll;
+
+    @include wide {
+        flex-direction: row;
+        // padding: 25px;
+        align-items: center;
+        max-width: 80%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        // height: 100%;
+
+        @include normal {
+            flex-direction: row;
+        }
+    }
+
+    .head {
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        background: rgba($grey-1, 0.5);
+
+        div:nth-child(1) {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+        }
+
+        button {
+            width: 50px;
+            background-color: transparent;
+            // position: absolute;
+        }
+
+        // @include wide {
+        //     // flex-direction: row;
+        //     align-items: flex-end;
+        // }
+
+        h1 {
+            font-family: Playfair;
+            font-size: 2.5rem;
+            font-weight: 400;
+            // line-height: 5rem;
+            color: $grey-4;
+
+            @include mobile {
+                font-size: 2.5rem;
+            }
+        }
+
+        // span {
+        //     color: #ff47b7;
+        // }
+    }
+
+    .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 50%;
+        img {
+            width: 90%;
+
+            @include mobile {
+                width: 70%;
+            }
+        }
+    }
+
+    .details {
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        font-family: Raleway;
+        padding: 15px;
+
+        .title {
+            font-size: rem(28px);
+            text-align: left;
+        }
+
+        .title::before {
+            content: "//";
+            color: #22a3ab;
+            font-weight: 400;
+        }
+
+        button {
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        .links {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            margin-top: 30px;
+        }
+
+        .info {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        ul {
+            list-style-type: circle;
+            list-style-position: inside;
+            // color: #ff47b7;
+
+            display: flex;
+            flex-wrap: wrap;
+            list-style-position: none;
+
+            li {
+                margin-left: 10px;
+            }
+        }
+    }
+}

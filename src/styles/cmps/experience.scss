@@ -1,0 +1,49 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-image: url("../../Images/bg-ss-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+
+    .job-description {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        background-color: #fafafa;
+        border-radius: 5px;
+
+        button:focus {
+            outline: 0px auto;
+        }
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px;
+        // margin-top: 80px;
+    }
+    .intro::before {
+        content: url("../../Images/element_experience.png");
+        position: relative;
+        z-index: -1;
+        transform: rotate(45deg);
+        top: 175px;
+    }
+}
+// .experience::after {
+//     content: url("../../Images/element_mountains.jpg");
+//     position: absolute;
+//     z-index: -1;
+//     bottom: 0;
+// }
+
+.MuiStepIcon-text {
+    display: none;
+}

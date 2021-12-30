@@ -13,15 +13,14 @@
 @import "basics/colors.scss";
 @import "basics/animation.scss";
 
-//pages
-@import "pages/projectDetails.scss";
-
 //cmps
-@import "cmps/about.scss";
-@import "cmps/contact.scss";
-@import "cmps/home.scss";
-@import "cmps/projects.scss";
 @import "cmps/nav.scss";
+@import "cmps/home.scss";
+@import "cmps/about.scss";
+@import "cmps/projects.scss";
+@import "cmps/experience.scss";
+@import "cmps/contact.scss";
 @import "cmps/timelime.scss";
+@import "cmps/project-details.scss";
 
 // @import "~bootstrap/scss/bootstrap";

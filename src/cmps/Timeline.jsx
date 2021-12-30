@@ -1,51 +1,89 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import mamram from '../Images/about/mamram.png';
 import flyingcargo from '../Images/about/flyingcargo.jpg';
-import stratasys from '../Images/about/stratasys.jpg';
+import stratasys from '../Images/about/stratasys.png';
 import amdocs from '../Images/about/amdocs.png';
 import johnbryce from '../Images/about/johnbryce.png';
+import haaretz from '../Images/about/haaretz.png';
+import codex from '../Images/about/codex.jpeg';
 
 
 
 const Timeline = () => {
-
-    const description = ['Mamram', 'flyingcargo Ltd', 'Stratasys', 'Amdocs', 'JohnBryce']
-
-    useEffect(() => {
-        console.log('timeline');
-    }, [])
-
-
     return (
         <div className="timeline">
-
-            <div1 className="circle-container">
+                        <div className="circle-container">
                 <section className="tl no-border"></section>
                 <section className="tr no-border"></section>
                 <div className="flex">
-                    <span className="circle"><img src={johnbryce} /></span>
+                    <span className="circle"><img src={haaretz} alt="haaretz" /></span>
                 </div>
                 <section className="bl"></section>
                 <section className="br"></section>
-            </div1>
+            </div>
             <section className="info no-border">
-                <h3>Instructional Designer </h3>
+                <h3>Frontend Developer (React Team)<span className="fs16">Jun 2020 - present</span></h3>
                 <span>
                     <ul>
-                        <li>Designed and developed custom learning products like: eLearning courses, videos and interactive simulations</li>
+                        <li>Creating new responsive and pixel perfect features from scratch </li>
+                        <li>Building and maintaining reusable components used by 3 different web apps (Haaretz.co.il, the marker.com, Haaretz.com)</li>
+                        <li>Troubleshooting and resolving complex programming problems</li>
+                        <li>Writing E2E tests</li>
+                    </ul>
+                </span>
+            </section>
+
+            {/* sections for design  */}
+            <section></section>
+            <section></section>
+
+            <section className="info">
+                <h3>Frontend Developer <span className="fs16">Apr 2020 – July 2020 (temp project)</span></h3>
+                <span>
+                    <ul>
+                        <li>Developed using REACT and SASS</li>
+                        <li>Sketched wireframes, prototyped concepts and created UI designs for better user experience</li>
+                    </ul>
+                </span>
+            </section>
+            <div className="circle-container">
+                <section className="tl"></section>
+                <section className="tr"></section>
+                <div className="flex">
+                    <span className="circle"><img src={codex} alt="codex" /></span>
+                </div>
+                <section className="bl"></section>
+                <section className="br"></section>
+            </div>
+
+            <div className="circle-container">
+                <section className="tl"></section>
+                <section className="tr"></section>
+                <div className="flex">
+                    <span className="circle"><img src={johnbryce} alt="jb" /></span>
+                </div>
+                <section className="bl"></section>
+                <section className="br"></section>
+            </div>
+            <section className="info">
+                <h3>Instructional Designer  <span className="fs16">Jun 2018 - Sep 2019</span></h3>
+                <span>
+                    <ul>
+                        <li>Designed and developed custom learning products like: eLearning courses, videos, interactive simulations and web job aids</li>
                         <li>Worked collaboratively with subject matter experts to identify and set learning goals according to the target audience's training needs</li>
                         <li>Managed multiple projects from different fields of knowledge</li>
                     </ul>
                 </span>
-
-
             </section>
+
+            {/* sections for design  */}
+            <section></section>
             <section></section>
 
-            <section></section>
             <section className="info">
-                <h3>Instructional Designer</h3>
+                <h3>Instructional Designer  <span className="fs16">April 2018 - Jun 2018 (temp project)</span></h3>
+
                 <span>
                     <ul>
                         <li>Planned, designed and developed simulations and e-learnings</li>
@@ -53,27 +91,28 @@ const Timeline = () => {
                     </ul>
                 </span>
             </section>
-            <div1 className="circle-container">
+            <div className="circle-container">
                 <section className="tl"></section>
                 <section className="tr"></section>
                 <div className="flex">
-                    <span className="circle"><img src={amdocs} /></span>
+                    <span className="circle"><img src={amdocs} alt="amdocs" /></span>
                 </div>
                 <section className="bl"></section>
                 <section className="br"></section>
-            </div1>
+            </div>
 
-            <div1 className="circle-container">
+            <div className="circle-container">
                 <section className="tl"></section>
                 <section className="tr"></section>
                 <div className="flex">
-                    <span className="circle"><img src={stratasys} /></span>
+                    <span className="circle"><img src={stratasys} alt="stratasys" /></span>
                 </div>
                 <section className="bl"></section>
                 <section className="br"></section>
-            </div1>
+            </div>
             <section className="info">
-                <h3>IT Technician</h3>
+                <h3>IT Technician  <span className="fs16">Apr 2013 - Aug 2017</span></h3>
+
                 <span>
                     <ul>
                         <li>Installed, tested and configured complex hardware, software, and networking systems</li>
@@ -82,10 +121,12 @@ const Timeline = () => {
                     </ul>
                 </span>
             </section>
+
             <section></section>
             <section></section>
             <section className="info">
-                <h3>Helpdesk Technician </h3>
+                <h3>Helpdesk Technician <span className="fs16">Jul 2011 - Jun 2012</span></h3>
+
                 <span>
                     <ul >
                         <li>Supported over 600 user’s problems resolution (company programs, remote control, mail server)</li>
@@ -93,26 +134,26 @@ const Timeline = () => {
                 </span>
             </section>
 
-            <div1 className="circle-container">
+            <div className="circle-container">
                 <section className="tl"></section>
                 <section className="tr"></section>
                 <div className="flex">
-                    <span className="circle"><img src={flyingcargo} /></span>
+                    <span className="circle"><img src={flyingcargo} alt="fc" /></span>
                 </div>
                 <section className="bl"></section>
                 <section className="br"></section>
-            </div1>
+            </div>
 
 
-            <div1 class="circle-container">
-                <section class="tl"></section>
-                <section class="tr"></section>
-                <div class="flex mamram">
-                    <span class="circle"><img src={mamram} /></span>
+            <div className="circle-container">
+                <section className="tl"></section>
+                <section className="tr"></section>
+                <div className="flex mamram">
+                    <span className="circle"><img src={mamram} alt="mamram" /></span>
                     <span>Mamram</span>
                 </div>
-                <section class="bl"></section>
-            </div1>
+                <section className="bl"></section>
+            </div>
             <section className="info">
                 <h3>Assimilate Information Systems & Network Manager </h3>
                 <span><ul>
@@ -124,38 +165,6 @@ const Timeline = () => {
 
 
         </div>)
-
-    // return (<div>
-    //     <div classNameNameName="timeline-container">
-    //         <div>
-    //             <span>2009-2011</span>
-    //             <img src={mamram} />
-    //         </div>
-
-    //         <div>
-    //             <span>2009-2010</span>
-    //             <img src={flyingcargo} />
-    //         </div>
-
-    //         <div>
-    //             <span>2011-2017</span>
-    //             <img src={stratasys} />
-    //         </div>
-
-    //         <div>
-    //             <span>2018</span>
-    //             <img src={amdocs} />
-    //         </div>
-
-    //         <div>
-    //             <span>2018-2019</span>
-    //             <img src={johnbryce} />
-    //         </div>
-
-    //     </div>
-
-    // </div>
-
 
 
 

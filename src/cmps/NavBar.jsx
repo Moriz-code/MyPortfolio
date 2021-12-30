@@ -6,43 +6,60 @@ import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } f
 
 const NavBar = (props) => {
 
-    const [scroll, setScroll] = useState(0)
+    // const [scroll, setScroll] = useState(0)
 
-    useEffect(() => {
-        document.addEventListener("scroll", () => {
-            const scrollCheck = window.scrollY < 100
-            if (scrollCheck !== scroll) {
-                setScroll(scrollCheck)
-            }
-        })
-    })
+    // useEffect(() => {
+    //     document.addEventListener("isScroll", () => {
+    //         const scrollCheck = window.scrollY < 100
+    //         if (scrollCheck !== isScroll) {
+    //             setScroll(scrollCheck)
+    //         }
+    //     })
+    // })
 
 
-    const handleSetActive = (to) => {
-        // history.push('/template');
-        console.log(to);
-    }
 
     return (
-        <div className={`main-nav fixed  ${scroll ? '' : 'white bg'}`}>
-            <div className="content">
-                <div className="logo"><a href="#home">Mor's Protfolio<span className="red-dot">.</span></a></div>
-                <ul>
-                    <Link to={'/'} activeClass="active" to="home" spy={true} smooth={true} duration={300} onSetActive={handleSetActive}>
-                        Home
+
+
+        <header className="header">
+            <a href="" className="logo" href="#home">Mor's Portfolio<span className="red-dot">.</span></a>
+            <input className="menu-btn" type="checkbox" id="menu-btn" />
+            <label className="menu-icon" htmlFor="menu-btn"><span className="navicon" /></label>
+            <ul className="menu">
+                <ul className="nav-links">
+                    <li>
+                        <Link to={'/'} activeClass="active" to="home" spy={true} smooth={true} duration={300}>
+                            Home
                       </Link>
-                    <Link to={'/about'} activeClass="active" to="about" spy={true} smooth={true} duration={300} onSetActive={handleSetActive}>
-                        About
+                    </li>
+
+                    <li>
+                        <Link to={'/about'} activeClass="active" to="about" spy={true} smooth={true} duration={300}>
+                            About
                       </Link>
-                    <Link to={'/projects'} activeClass="active" to="projects" spy={true} smooth={true} duration={300} onSetActive={handleSetActive}>
-                        Projects
+                    </li>
+
+                    <li>
+                        <Link to={'/projects'} activeClass="active" to="projects" spy={true} smooth={true} duration={300}>
+                            Projects
                       </Link>
-                    <Link to={'/contact'} activeClass="active" to="contact" spy={true} smooth={true} duration={300} onSetActive={handleSetActive}>
-                        Contact
+                    </li>
+
+                    <li>
+                        <Link to={'/experience'} activeClass="active" to="experience" spy={true} smooth={true} duration={300}>
+                            Experience
                       </Link>
+                    </li>
+
+                    <li>
+                        <Link to={'/contact'} activeClass="active" to="contact" spy={true} smooth={true} duration={300}>
+                            Contact
+                      </Link>
+                    </li>
                 </ul>
-            </div>
-        </div>
+            </ul>
+        </header>
     )
 }
 

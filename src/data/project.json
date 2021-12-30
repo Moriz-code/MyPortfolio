@@ -3,7 +3,7 @@
         "id": "1",
         "title": "ShowRoom",
         "description": "Cool Marketplace For Fashion Designer",
-        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis autem animi dolor vero minima aperiam suscipit a? Voluptas vel eveniet porro dolore rem, iure tempora recusandae consequuntur maiores laudantium magnam.",
+        "about": "Every designer can create, design and upload products to his own shop! and every user can buy any items he would like (or just adding it to the wishlist)",
         "imgs": [
             "/Images/projects/showroom/showroom.png",
             "/Images/projects/showroom/devices.png"
@@ -13,18 +13,58 @@
             "RACTJS",
             "REDUX",
             "MONGODB",
-            "WEB SOCKET",
+            "NODEJS",
             "SASS",
-            "UI/UX"
+            "API",
+            "UI/UX",
+            "BACK-END"
         ],
         "github": "https://github.com/Moriz-code/Showroom",
         "website": "http://showroomweb.herokuapp.com/"
     },
     {
+        "id": "3",
+        "title": "KEEP-IT",
+        "description": "Notes with edge",
+        "about": "Add some life to your regular notes with youtube music or favorite images",
+        "imgs": [
+            "/Images/projects/keep/keep.png",
+            "/Images/projects/keep/devices.png"
+        ],
+        "technical": [
+            "REACTJS",
+            "HTML5",
+            "CSS3",
+            "UI/UX",
+            "MVC"
+        ],
+        "github": "https://github.com/Moriz-code/Appsus",
+        "website": "https://moriz-code.github.io/Appsus/"
+    },
+    {
+        "id": "4",
+        "title": "MEME GENERATOR",
+        "description": "Create your own creative MEME",
+        "about": "Create your own meme, share it on facebook or save to your personal gallery!",
+        "imgs": [
+            "/Images/projects/memeGenerator/memeGenerator.png",
+            "/Images/projects/memeGenerator/devices.png"
+        ],
+        "technical": [
+            "CANVAS",
+            "HTML5",
+            "CSS3",
+            "MVC",
+            "JAVASCRIPT"
+        ],
+        "github": "https://github.com/Moriz-code/Meme_generator",
+        "website": "https://moriz-code.github.io/Meme_generator/"
+    },
+    {
         "id": "2",
         "title": "BRIOT-ON",
         "description": "Interactive Game & Weekly Diary",
-        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis autem animi dolor vero minima aperiam suscipit a? Voluptas vel eveniet porro dolore rem, iure tempora recusandae consequuntur maiores laudantium magnam.",
+        "about": "Cooperation with Schneider hospital - educational game for building healthy plate and weekly diary send directly to the nutritionist.  In use on a daily bases for the past 3 years.",
         "imgs": [
             "/Images/projects/schneider/schnider.png",
             "/Images/projects/schneider/devices.png"
@@ -32,50 +72,44 @@
         "technical": [
             "HTML5",
             "CSS3",
-            "VANILLAJS",
-            "UI/UX",
-            "GRAPHIC DESIGN"
-        ],
-        "website": "http://showroomweb.herokuapp.com/"
-    },
-    {
-        "id": "3",
-        "title": "KEEP-IT",
-        "description": "Cool Marketplace for fashion designer",
-        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis autem animi dolor vero minima aperiam suscipit a? Voluptas vel eveniet porro dolore rem, iure tempora recusandae consequuntur maiores laudantium magnam.",
-        "imgs": [
-            "/Images/projects/keep/keep.png",
-            "/Images/projects/keep/devices.png"
-        ],
-        "technical": [
-            "HTML5",
-            "RACTJS",
-            "REDUX",
-            "MONGODB",
-            "WEB SOCKET",
-            "SASS",
+            "BOOTSTRAP",
+            "JAVASCRIPT",
             "UI/UX"
         ],
-        "github": "https://github.com/Moriz-code/Showroom",
-        "website": "http://showroomweb.herokuapp.com/"
+        "website": "http://projects.telem-hit.net/2016/Tzuna_osherMor/TzunaKid/"
     },
     {
-        "id": "4",
-        "title": "MEME GENERATOR",
-        "description": "Create your own creative MEME",
-        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis autem animi dolor vero minima aperiam suscipit a? Voluptas vel eveniet porro dolore rem, iure tempora recusandae consequuntur maiores laudantium magnam.",
+        "id": "5",
+        "title": "TOYS INVENTORY",
+        "description": "Manage your products",
+        "about": "CRDUL for toys products, the project include backend",
         "imgs": [
-            "/Images/projects/memeGenerator/memeGenerator.png",
-            "/Images/projects/memeGenerator/memeGenerator.png"
+            "/Images/projects/toysInventory/toysInventory.png",
+            "/Images/projects/toysInventory/devices.png"
         ],
         "technical": [
-            "CANVAS",
+            "NODEJS",
+            "HTML5",
+            "EXPRESS",
+            "SASS"
+        ],
+        "github": "https://github.com/Moriz-code/ToysInventory"
+    },
+    {
+        "id": "6",
+        "title": "MINESWEEPER",
+        "description": "Minesweeper in JavaScript",
+        "about": "Play the classic game in Beginner, Intermediate, and Expert modes, You even a more lifes and hints that you can use!",
+        "imgs": [
+            "/Images/projects/mineSweeper/mineSweeper.png",
+            "/Images/projects/mineSweeper/devices.png"
+        ],
+        "technical": [
             "HTML5",
             "CSS3",
-            "MVC",
-            "VANILLAJS"
+            "JAVASCRIPT"
         ],
-        "github": "https://github.com/Moriz-code/Showroom",
-        "website": "http://showroomweb.herokuapp.com/"
+        "github": "https://github.com/Moriz-code/MineSweeper",
+        "website": "https://moriz-code.github.io/MineSweeper/"
     }
 ]
