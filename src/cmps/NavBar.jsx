@@ -12,31 +12,31 @@ const NavBar = (props) => {
             <ul className="menu">
                 <ul className="nav-links">
                     <li>
-                        <Link to={'/'} activeClass="active" to="home" spy={true} smooth={true} duration={300}>
+                        <Link to={'/'} activeClass="active" to="home" spy={true} smooth={true} duration={100}>
                             Home
                       </Link>
                     </li>
 
                     <li>
-                        <Link to={'/about'} activeClass="active" to="about" spy={true} smooth={true} duration={300}>
+                        <Link to={'/about'} activeClass="active" to="about" spy={true} smooth={true} duration={100}>
                             About
                       </Link>
                     </li>
 
                     <li>
-                        <Link to={'/projects'} activeClass="active" to="projects" spy={true} smooth={true} duration={300}>
+                        <Link to={'/projects'} activeClass="active" to="projects" spy={true} smooth={true} duration={100}>
                             Projects
                       </Link>
                     </li>
 
                     <li>
-                        <Link to={'/experience'} activeClass="active" to="experience" spy={true} smooth={true} duration={300}>
+                        <Link to={'/experience'} activeClass="active" to="experience" spy={true} smooth={true} duration={100}>
                             Experience
                       </Link>
                     </li>
 
                     <li>
-                        <Link to={'/contact'} activeClass="active" to="contact" spy={true} smooth={true} duration={300}>
+                        <Link to={'/contact'} activeClass="active" to="contact" spy={true} smooth={true} duration={-100}>
                             Contact
                       </Link>
                     </li>

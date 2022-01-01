@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Element, } from 'react-scroll';
 
-import LazyLoad from 'react-lazyload';
+
 
 //services
 import projectService from '../services/project.service';
@@ -35,28 +35,20 @@ class Main extends Component {
             </Element>
 
             <Element name="about">
-                <LazyLoad height='100vh'>
-                    <About />
-                </LazyLoad>
+                    <About />             
             </Element>
 
             <Element name="projects">
-                <LazyLoad height='100vh'>
                     <Projects projects={this.state.projects} />
-                </LazyLoad>
             </Element>
 
             <Element name="experience">
-                <LazyLoad height='100vh'>
                     <Experience />
-                </LazyLoad>
             </Element>
 
 
             <Element name="contact">
-                <LazyLoad height='100vh'>
                     <Contact />
-                </LazyLoad>
             </Element>
 
         </>)
