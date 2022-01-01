@@ -27,7 +27,7 @@ const Contact = () => {
 
     useEffect(() => {
         history.push("/contact");
-    }, [])
+    }, [history])
 
 
     const sendEmail = (e) => {
@@ -87,7 +87,7 @@ const Contact = () => {
 
                     </div>
                     <div className={confirm ? 'email-confirm' : 'display-none'}>
-                        <img src={sent} />
+                        <img src={sent} alt="sent"/>
                         <span className="fs18">Got your E-mail, I will read it ASAP!</span>
                     </div>
                     { fail ? 
@@ -101,23 +101,23 @@ const Contact = () => {
                 <div className="social">
                     <div className="methods fs20">
                         <div>
-                            <img src={phone} />
+                            <img src={phone} alt="phone" />
                             <span>+972 522937174</span>
                         </div>
 
                         <div>
-                            <img src={location} />
+                            <img src={location} alt="location"/>
                             <span>Tel-Aviv</span>
                         </div>
 
                         <div>
-                            <img src={mail} />
+                            <img src={mail} alt="mail" />
                             <span><a href="mailto:morzavi1@gmail.com">Morzavi1@gmail.com</a></span>
                         </div>
 
                         <div className="network links">
-                            <a target="_blank" href="https://www.facebook.com/mor.zeevi.7" rel="noreferrer"> <img src={facebook} /></a>
-                            <a target="_blank" href="https://www.linkedin.com/in/mor-zeevi/" rel="noreferrer"> <img src={linkedin} /></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/mor.zeevi.7"> <img src={facebook} alt="facebook link" /></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mor-zeevi/"> <img src={linkedin} alt="linkdin link" /></a>
                         </div>
 
                     </div>

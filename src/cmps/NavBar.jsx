@@ -1,29 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-import * as Scroll from 'react-scroll';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-// import { NavLink, Link } from 'react-router-dom';
+import { Link, } from 'react-scroll';
 
 const NavBar = (props) => {
 
-    // const [scroll, setScroll] = useState(0)
-
-    // useEffect(() => {
-    //     document.addEventListener("isScroll", () => {
-    //         const scrollCheck = window.scrollY < 100
-    //         if (scrollCheck !== isScroll) {
-    //             setScroll(scrollCheck)
-    //         }
-    //     })
-    // })
-
-
-
     return (
-
-
         <header className="header">
-            <a href="" className="logo" href="#home">Mor's Portfolio<span className="red-dot">.</span></a>
+            <a className="logo" href="#home">Mor's Portfolio<span className="red-dot">.</span></a>
             <input className="menu-btn" type="checkbox" id="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn"><span className="navicon" /></label>
             <ul className="menu">

@@ -1,10 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import close from '../Images/close.png';
 
 
 const ProjectDetails = (props) => {
-
-    console.log('project details', props);
 
     const { project, onClose } = props;
 
@@ -17,7 +15,7 @@ const ProjectDetails = (props) => {
             </div>
 
             <div>
-                <button onClick={onClose}><img src={close} /></button>
+                <button onClick={onClose}><img src={close} alt="close" /></button>
             </div>
         </div>
 
@@ -48,7 +46,7 @@ const ProjectDetails = (props) => {
 
             </div>
             <div className="image">
-                <img src={project.imgs[1]}></img>
+                <img src={project.imgs[1]} alt="project" />
             </div>
 
 

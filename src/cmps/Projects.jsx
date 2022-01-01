@@ -12,7 +12,7 @@ const Projects = (props) => {
 
     useEffect(() => {
         history.push("/projects");
-    }, [])
+    }, [history])
 
 
     const { projects } = props

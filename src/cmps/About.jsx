@@ -24,7 +24,7 @@ const About = () => {
 
     useEffect(() => {
         history.push("/about");
-    }, [])
+    }, [history])
 
 
 

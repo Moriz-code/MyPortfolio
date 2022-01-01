@@ -8,7 +8,7 @@ const Experience = () => {
 
     useEffect(() => {
         history.push("/experience");
-    }, [])
+    }, [history])
 
     return (
         <section id="experience" className=" experience slide-in-bck-center">
