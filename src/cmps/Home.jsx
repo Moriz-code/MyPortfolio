@@ -10,7 +10,7 @@ const Home = () => {
             <div className="intro-txt">
                 <span className="pink txt bg tag">HI, I AM</span>
                 <span className="name">Mor Zeevi</span>
-                <span className="rule fs28">Full Stack Developer & Instructional Designer</span>
+                <span className="rule fs28">Frontend Developer & Instructional Designer</span>
                 <p>with a <span>BIG</span> passion for coding, pixel perfect and learning new technologies. </p>
 
                 <button className="download-btn action-btn"><a href={resume} download>Download Resume</a></button>
